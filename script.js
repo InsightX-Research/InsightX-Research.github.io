@@ -1,7 +1,7 @@
 const pages = [
   {
     title: "Chapter 1: The Beginning",
-    content: "Once upon a time in a village, there lived a young dreamer who believed in magic and hope.",
+    content: "hello i am dishu .",
   },
   {
     title: "Chapter 2: The Journey",
