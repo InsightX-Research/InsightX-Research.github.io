@@ -27,4 +27,8 @@ const BookViewer = () => {
   );
 };
 
+<Link to="/book">
+  <img src="/images/book-cover.png" alt="Open Book" className="w-64 hover:scale-105 transition" />
+</Link>
+
 export default BookViewer;
