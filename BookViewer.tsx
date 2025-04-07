@@ -1,6 +1,7 @@
 npm install react react-dom react-pageflip
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
+import { Link } from "react-router-dom";
 import { pages } from "./pages";
 import "./BookViewer.css";
 
