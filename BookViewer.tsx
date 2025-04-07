@@ -1,3 +1,4 @@
+npm install react react-dom react-pageflip
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
 import { pages } from "./pages";
