@@ -1,0 +1,47 @@
+.book-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fef3c7, #fde68a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.book-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5c4033;
+  margin-bottom: 1rem;
+}
+
+.flipbook {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.page {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  font-family: Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.page p {
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.page footer {
+  text-align: right;
+  font-size: 0.85rem;
+  color: gray;
+  margin-top: 1rem;
+}
