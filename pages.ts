@@ -1,7 +1,7 @@
 export const pages = [
   {
     title: "Chapter 1: The Beginning",
-    content: "Once upon a time, in a quiet village nestled between hills...",
+    content: "hello guys yeahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
   },
   {
     title: "Chapter 2: The Journey",
