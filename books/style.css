@@ -5,16 +5,6 @@ body {
   padding: 0;
 }
 
-.page-transition {
-  transition: transform 0.3s ease-in-out;
-  transform-style: preserve-3d;
-}
-
-.page-content {
-  padding: 20px;
-  min-height: 70vh;
-}
-
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -37,17 +27,39 @@ body {
 
 .page {
   text-align: left;
+  position: relative;
+}
+
+.page-transition {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.page-transition-leave {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.page-content {
+  padding: 20px;
+  min-height: 70vh;
+  position: relative;
+  z-index: 1;
 }
 
 .page h2 {
   font-size: 1.8rem;
   color: #4b3b2a;
+  margin-bottom: 1.5rem;
 }
 
 .page p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 1rem 0;
+  color: #5c5248;
 }
 
 .footer {
@@ -55,6 +67,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee5d4;
 }
 
 button {
@@ -65,14 +79,55 @@ button {
   font-size: 1rem;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 button:hover {
   background-color: #d97706;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
 }
 
 #page-number {
   font-weight: bold;
   font-size: 1rem;
+  color: #5c4033;
+  min-width: 60px;
+}
+
+/* Added animation styles */
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pageOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.page-enter {
+  animation: pageIn 0.3s forwards;
+}
+
+.page-exit {
+  animation: pageOut 0.3s forwards;
 }
