@@ -5,6 +5,16 @@ body {
   padding: 0;
 }
 
+.page-transition {
+  transition: transform 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.page-content {
+  padding: 20px;
+  min-height: 70vh;
+}
+
 .container {
   max-width: 700px;
   margin: 0 auto;
