@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title>My Book Flipbook</title>
-  <link rel="stylesheet" href="books/style.css" />
-  <script src="books/script.js"></script>
+  <link rel="stylesheet" href="books/style.css">
 </head>
 <body>
   <div class="container">
-    <h1 class="title">📖 Research Paper</h1>
+    <h1 class="title" aria-label="Research Paper">📖 Research Paper</h1>
 
     <div class="book">
-      <div id="page" class="page">
-        <div class="footer">
-          <button onclick="prevPage()">⬅️ Prev</button>
-          <span id="page-number">1</span>
-          <button onclick="nextPage()">Next ➡️</button>
+      <div class="pages-container">
+        <!-- Pages would be dynamically added here -->
+        <div class="page" data-page="1">
+          <div class="page-content">
+            <!-- Your actual content here -->
+          </div>
         </div>
+      </div>
+      <div class="footer">
+        <button class="nav-button" onclick="prevPage()" aria-label="Previous page">
+          ⬅️ Prev
+        </button>
+        <span id="page-number" aria-live="polite">1</span>
+        <button class="nav-button" onclick="nextPage()" aria-label="Next page">
+          Next ➡️
+        </button>
       </div>
     </div>
   </div>
-  
+
+  <script src="books/script.js"></script>
 </body>
 </html>
