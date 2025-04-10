@@ -1,3 +1,4 @@
+// Corrected JavaScript
 const pages = [
   { 
     title: "Chapter 1: The Beginning",
@@ -19,36 +20,24 @@ const pages = [
 
 class FlipBook {
   constructor() {
-    this.currentPage = 1;
-    this.pageElement = document.getElementById('page');
+    this.currentPage = 0; // Start at first page (index 0)
+    this.titleElement = document.getElementById('chapter-title');
+    this.contentElement = document.getElementById('page-text');
     this.pageNumberElement = document.getElementById('page-number');
-    this.initFooter();
-  }
-
-  initFooter() {
-    this.footerHTML = `
-      <div class="footer">
-        <button onclick="book.prev()">⬅️ Prev</button>
-        <span id="page-number">1</span>
-        <button onclick="book.next()">Next ➡️</button>
-      </div>
-    `;
   }
 
   render() {
-    this.pageElement.classList.add('page-transition');
+    // Add transition class
+    document.getElementById('page-container').classList.add('page-transition');
     
+    // Update content after transition
     setTimeout(() => {
-      this.pageElement.innerHTML = `
-        <div class="content" aria-live="polite">
-          <h2>${pages[this.currentPage].title}</h2>
-          <p>${pages[this.currentPage].content}</p>
-        </div>
-        ${this.footerHTML}
-      `;
-      
+      this.titleElement.textContent = pages[this.currentPage].title;
+      this.contentElement.textContent = pages[this.currentPage].content;
       this.pageNumberElement.textContent = this.currentPage + 1;
-      this.pageElement.classList.remove('page-transition');
+      
+      // Remove transition class
+      document.getElementById('page-container').classList.remove('page-transition');
     }, 300);
   }
 
@@ -60,7 +49,7 @@ class FlipBook {
   }
 
   prev() {
-    if (this.currentPage > 1) {
+    if (this.currentPage > 0) { // Allow going back to first page
       this.currentPage--;
       this.render();
     }
