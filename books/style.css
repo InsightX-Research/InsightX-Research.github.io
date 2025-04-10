@@ -25,37 +25,32 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.page {
-  text-align: left;
+#page-container {
   position: relative;
-}
-
-.page-transition {
-  opacity: 1;
-  transform: translateX(0);
-  transition: all 0.3s ease-in-out;
-  transform-style: preserve-3d;
-}
-
-.page-transition-leave {
-  opacity: 0;
-  transform: translateX(20px);
+  min-height: 70vh;
 }
 
 .page-content {
   padding: 20px;
-  min-height: 70vh;
   position: relative;
   z-index: 1;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
 }
 
-.page h2 {
+.page-transition {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+h2 {
   font-size: 1.8rem;
   color: #4b3b2a;
   margin-bottom: 1.5rem;
 }
 
-.page p {
+p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 1rem 0;
@@ -101,7 +96,15 @@ button:active {
   min-width: 60px;
 }
 
-/* Added animation styles */
+/* Animation corrections */
+.page-enter-active {
+  animation: pageIn 0.3s forwards;
+}
+
+.page-exit-active {
+  animation: pageOut 0.3s forwards;
+}
+
 @keyframes pageIn {
   from {
     opacity: 0;
@@ -122,12 +125,4 @@ button:active {
     opacity: 0;
     transform: translateX(-20px);
   }
-}
-
-.page-enter {
-  animation: pageIn 0.3s forwards;
-}
-
-.page-exit {
-  animation: pageOut 0.3s forwards;
 }
