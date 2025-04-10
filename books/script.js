@@ -1,4 +1,4 @@
-// Corrected JavaScript
+// Updated JavaScript
 const pages = [
   { 
     title: "Chapter 1: The Beginning",
@@ -20,24 +20,25 @@ const pages = [
 
 class FlipBook {
   constructor() {
-    this.currentPage = 0; // Start at first page (index 0)
+    this.currentPage = 0;
+    this.pageContainer = document.getElementById('page-container');
     this.titleElement = document.getElementById('chapter-title');
     this.contentElement = document.getElementById('page-text');
     this.pageNumberElement = document.getElementById('page-number');
   }
 
   render() {
-    // Add transition class
-    document.getElementById('page-container').classList.add('page-transition');
+    // Start transition
+    this.pageContainer.classList.add('page-transition');
     
-    // Update content after transition
     setTimeout(() => {
+      // Update content
       this.titleElement.textContent = pages[this.currentPage].title;
       this.contentElement.textContent = pages[this.currentPage].content;
       this.pageNumberElement.textContent = this.currentPage + 1;
       
-      // Remove transition class
-      document.getElementById('page-container').classList.remove('page-transition');
+      // End transition
+      this.pageContainer.classList.remove('page-transition');
     }, 300);
   }
 
@@ -49,7 +50,7 @@ class FlipBook {
   }
 
   prev() {
-    if (this.currentPage > 0) { // Allow going back to first page
+    if (this.currentPage > 0) {
       this.currentPage--;
       this.render();
     }
