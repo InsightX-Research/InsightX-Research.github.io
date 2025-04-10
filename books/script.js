@@ -19,7 +19,7 @@ const pages = [
 
 class FlipBook {
   constructor() {
-    this.currentPage = 0;
+    this.currentPage = 1;
     this.pageElement = document.getElementById('page');
     this.pageNumberElement = document.getElementById('page-number');
     this.initFooter();
@@ -60,7 +60,7 @@ class FlipBook {
   }
 
   prev() {
-    if (this.currentPage > 0) {
+    if (this.currentPage > 1) {
       this.currentPage--;
       this.render();
     }
