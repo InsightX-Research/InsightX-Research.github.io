@@ -1,3 +1,4 @@
+<!-- Corrected HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,20 +12,18 @@
     <h1 class="title" aria-label="Research Paper">📖 Research Paper</h1>
 
     <div class="book">
-      <div class="pages-container">
-        <!-- Pages would be dynamically added here -->
-        <div class="page" data-page="1">
-          <div class="page-content">
-            <!-- Your actual content here -->
-          </div>
+      <div id="page-container"> <!-- Changed to ID for JS reference -->
+        <div class="page-content"> <!-- Content container -->
+          <h2 id="chapter-title"></h2>
+          <p id="page-text"></p>
         </div>
       </div>
       <div class="footer">
-        <button class="nav-button" onclick="prevPage()" aria-label="Previous page">
+        <button class="nav-button" onclick="book.prev()" aria-label="Previous page">
           ⬅️ Prev
         </button>
         <span id="page-number" aria-live="polite">1</span>
-        <button class="nav-button" onclick="nextPage()" aria-label="Next page">
+        <button class="nav-button" onclick="book.next()" aria-label="Next page">
           Next ➡️
         </button>
       </div>
