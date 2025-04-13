@@ -16,8 +16,8 @@ from modern telescopes, this work will highlight the significance of this phenom
 deepening our understanding of the universe. Additionally, the paper will discuss current
 challenges and future possibilities for uncovering the secrets of dark matter through
 advancements in gravitational lensing technology.`
-  },
-  {
+},
+ {
     title: "Background/Related Work",
     content: `1. Understanding Dark Matter
 Dark matter is an invisible form of matter that makes up approximately 27% of the
@@ -45,7 +45,7 @@ lensing. This separation provides direct evidence of dark matter’s existence a
 behavior. Similarly, surveys such as the Hubble Space Telescope's Frontier Fields
 program have used lensing to create detailed maps of dark matter distribution in galaxy
 clusters.`
-  },
+},
   {
     title: "Methods",
     content: `1. Observing Gravitational Lensing
@@ -77,7 +77,7 @@ To interpret lensing data, scientists rely on simulations and models. These mode
 simulate how dark matter behaves in different scenarios, such as galaxy cluster
 collisions. By comparing observations with simulations, researchers refine their
 understanding of dark matter's distribution, density, and interactions.`
-  },
+},
   {
     title: "Findings and Analysis",
     content: `1. Evidence of Dark Matter from Gravitational Lensing
@@ -109,8 +109,8 @@ While lensing has greatly advanced our understanding of dark matter, it has also
 revealed anomalies that challenge existing theories. For instance, some lensing
 observations suggest small-scale structures that are inconsistent with the cold dark
 matter model, hinting at the need for modifications or alternative explanations.`
-  },
-   {
+},
+  {
     title: "Discussion",
     content: `1. Implications for Dark Matter Research
 Gravitational lensing has provided compelling evidence for the existence of dark matter,
@@ -147,8 +147,8 @@ promise to improve the interpretation of lensing data, allowing for more accurat
 detailed dark matter maps. Future missions could also explore using gravitational
 microlensing to detect individual dark matter clumps or examine alternative theories of
 gravity that might explain lensing anomalies without invoking dark matter.`
-  },
-   {
+},
+  {
     title: "Conclusion",
     content: `Gravitational lensing has emerged as one of the most powerful tools for understanding
 dark matter, revealing its distribution, properties, and influence on the large-scale
@@ -170,7 +170,7 @@ understanding of dark matter but may also uncover new physics that could reshape
 knowledge of the universe. Ultimately, gravitational lensing will continue to be an
 indispensable tool in the quest to unravel the mysteries of dark matter, helping to
 answer one of the most profound questions in modern astrophysics.`
-  }
+}
 ];
 
 class FlipBook {
