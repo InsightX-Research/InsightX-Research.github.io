@@ -1,12 +1,12 @@
 // Updated JavaScript
 const pages = [
   { 
-    title: "Chapter 1: The Beginning",
-    content: "hello i am dishu."
+    title: "Introduction",
+    content: "As we explore the revolutionary technology of solar sails, we uncover their immense potential for deep space travel. By harnessing the power of sunlight, solar sails offer a sustainable propulsion method that could transform our ability to explore the solar system and beyond. Unlike conventional propulsion systems, solar sails rely on the momentum of photons emitted by the sun, enabling spacecraft to travel vast distances without the need for traditional fuel sources. This paper examines the principles of solar sail technology, its advantages over conventional methods, and its implications for future space missions."
   },
   {
-    title: "Chapter 2: The Journey",
-    content: "She set out on a quest across the hills and rivers, guided by the stars above."
+    title: "The Science Behind Solar Sails",
+    content: "Solar sails operate based on radiation pressure, the force exerted by light upon striking a surface. Although photons have no mass, they carry momentum, which is transferred to the sail upon collision. This process generates thrust, propelling the spacecraft forward.The efficiency of solar sails depends on their large surface area and lightweight construction. Advances in materials science continue to enhance the development of ultra-thin, highly reflective sails, maximizing the capture of sunlight. Through careful orientation, solar sails can alter their trajectory and speed, enabling precise navigation in space."
   },
   {
     title: "Chapter 3: The Trial",
