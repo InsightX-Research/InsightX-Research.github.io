@@ -2,7 +2,7 @@
 const pages = [
   { 
     title: "Introduction",
-    content: `As we explore the revolutionary technology of solar sails, we uncover their 
+    content: ` As we explore the revolutionary technology of solar sails, we uncover their 
     immense potential for deep space travel. By harnessing the power of sunlight, solar sails 
     offer a sustainable propulsion method that could transform our ability to explore the 
     solar system and beyond. Unlike conventional propulsion systems, solar sails rely on the 
@@ -34,7 +34,7 @@ const pages = [
     reserves, solar sails function as long as sunlight is available. This allows 
     for prolonged and uninterrupted missions.
 
-    2. Cost Efficiency – Traditional propulsion systems require extensive resources
+     2. Cost Efficiency – Traditional propulsion systems require extensive resources
     and budgets. Solar sails reduce launch costs and operational expenses, making 
     space exploration more financially feasible.
 
