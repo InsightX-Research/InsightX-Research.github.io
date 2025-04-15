@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+#output {
+  white-space: pre;
+}
+
 .container {
   max-width: 700px;
   margin: 0 auto;
