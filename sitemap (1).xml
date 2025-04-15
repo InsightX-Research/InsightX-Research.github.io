@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://insightx-research.github.io/</loc>
+  <lastmod>2025-04-15T06:20:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://insightx-research.github.io/index.html</loc>
+  <lastmod>2025-04-15T06:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://insightx-research.github.io/staff.html</loc>
+  <lastmod>2025-04-15T06:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://insightx-research.github.io/research_paper1/CRISPR_GENE_EDITING.html</loc>
+  <lastmod>2025-04-15T06:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://insightx-research.github.io/research_paper2/Solar_sails.html</loc>
+  <lastmod>2025-04-15T06:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://insightx-research.github.io/research_paper3/illuminating_DarkMatter.html</loc>
+  <lastmod>2025-04-15T06:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
