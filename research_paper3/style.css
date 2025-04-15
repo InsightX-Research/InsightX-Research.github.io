@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
   padding: 2rem;
@@ -25,7 +25,7 @@ body {
 .book {
   background: #fffaf0;
   padding: 2rem;
-  border-radius: 30px;
+  border-radius: 25px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,7 +40,6 @@ body {
 .page-content {
   padding: 20px;
   position: relative;
-  white-space: pre;
   z-index: 1;
   opacity: 1;
   transform: translateX(0);
